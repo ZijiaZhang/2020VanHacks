@@ -17,7 +17,7 @@
     // Initialize and add the map
     function initMap() {
         // The location of Uluru
-        var uluru = {lat: 49.2606, lng: 123.2460};
+        var uluru = {lat: 49.2765, lng: -123.2177};
         // The map, centered at Uluru
         var map = new google.maps.Map(
             document.getElementById('map'), {zoom: 4, center: uluru});
@@ -31,7 +31,9 @@
 * The callback parameter executes the initMap() function
 -->
 <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        var api_key = "AIzaSyB9wWG3fPuyANa7XIPJneHQiv3GAtDOASY";
+        var api_password
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9wWG3fPuyANa7XIPJneHQiv3GAtDOASY&callback=initMap">
 </script>
 </body>
 </html>
