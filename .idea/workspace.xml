@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee5eded9-7cb8-4f7b-b634-f7ed8f6623b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ .gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/scipts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="ee5eded9-7cb8-4f7b-b634-f7ed8f6623b4" name="Default Changelist" comment="done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -30,17 +43,20 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -52,16 +68,60 @@
       <option name="presentableId" value="Default" />
       <updated>1601161172113</updated>
       <workItem from="1601161173333" duration="1170000" />
+      <workItem from="1601162983965" duration="298000" />
     </task>
+    <task id="LOCAL-00001" summary="done">
+      <created>1601163270260</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601163270260</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1323" height="203" key="GridCell.Tab.0.bottom" timestamp="1601163004765">
+      <screen x="1920" y="21" width="1344" height="800" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601163004765" />
+    <state width="1323" height="203" key="GridCell.Tab.0.center" timestamp="1601163004765">
+      <screen x="1920" y="21" width="1344" height="800" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.0.center/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601163004765" />
+    <state width="1323" height="203" key="GridCell.Tab.0.left" timestamp="1601163004764">
+      <screen x="1920" y="21" width="1344" height="800" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.0.left/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601163004764" />
+    <state width="1323" height="203" key="GridCell.Tab.0.right" timestamp="1601163004765">
+      <screen x="1920" y="21" width="1344" height="800" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.0.right/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601163004765" />
     <state x="-3058" y="344" key="SettingsEditor" timestamp="1601161430312">
       <screen x="-3840" y="0" width="2560" height="1413" />
     </state>
     <state x="-3058" y="344" key="SettingsEditor/-3840.0.2560.1413/0.0.2560.1400@-3840.0.2560.1413" timestamp="1601161430312" />
+    <state x="2185" y="154" key="Vcs.Push.Dialog.v2" timestamp="1601163272335">
+      <screen x="1920" y="21" width="1344" height="800" />
+    </state>
+    <state x="2185" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601163272335" />
   </component>
 </project>
