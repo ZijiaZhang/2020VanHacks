@@ -1,0 +1,22 @@
+{
+  "name": "2020vanhacks",
+  "version": "1.0.0",
+  "description": "Vanhacks Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZijiaZhang/2020VanHacks.git"
+  },
+  "author": "Zijia Zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZijiaZhang/2020VanHacks/issues"
+  },
+  "homepage": "https://github.com/ZijiaZhang/2020VanHacks#readme",
+  "dependencies": {
+    "typescript": "^4.0.3"
+  }
+}
