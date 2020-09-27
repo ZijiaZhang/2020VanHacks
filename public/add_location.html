@@ -62,7 +62,7 @@
     }
 
     function add_row() {
-        document.getElementById("all-location").innerHTML += "    <div class=\"li-container\" style=\"width: 80%; margin-left: 10%\">\n" +
+        document.getElementById("all-location").insertAdjacentHTML('beforeend', "    <div class=\"li-container\" style=\"width: 80%; margin-left: 10%\">\n" +
             "        <div class=\"input-group mb-3\" >\n" +
             "            <input name=\"location\" type=\"text\" placeholder=\"add a location\" class=\"form-control\"/>\n" +
             "                <div class=\"input-group-append\">\n" +
@@ -90,7 +90,7 @@
             "        <div class=\"input-group mb-3\">\n" +
             "        <button onclick=\"$(this).closest('.li-container').remove()\" class=\"btn btn-danger\" style=\"width: 100%\">-</button>\n" +
             "        </div>\n" +
-            "    </div>";
+            "    </div>");
     }
 
     function submit() {
