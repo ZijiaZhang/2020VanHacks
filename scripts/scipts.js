@@ -1,22 +1,22 @@
 function initMap() {
     // The location of Uluru
     let locations = [
-        ["Khurnak Fort", {lat: 33.7667, lng: 78.9877}],
-        ["Sirijap", {lat: 33.74, lng: 78.849}],
-        ["Table Top", {lat: 33.604, lng:  78.745}],
-        ["Mukhpari Peak", {lat: 33.483333, lng: 78.815}],
-        ["Rezang La", {lat: 33.42, lng: 78.85}],
-        ["Quidijiankela Pass", {lat: 33.6275,  lng: 78.788056}],
-        ["Black Top", {lat: 33.6225,  lng: 78.7755}],
-        ["Bump ",{lat: 33.645, lng: 78.726}]
+        ["Wreck Beach: Sept 7th 1pm to 9pm", {lat: 49.262179, lng:  -123.261530}],
+        ["The King’s Head Public House: Sept 4th to Sept 7th", {lat: 49.271314, lng: -123.154828}],
+        ["Athens Cultural Club: August 26 to September 8", {lat: 49.262930, lng:  -123.107300}],
+        ["The West Pub: August 20 to September 8", {lat: 49.280835, lng: -123.104052}],
+        ["Flying Beaver Bar and Grill: August 28 to September 3", {lat: 49.177289, lng: -123.168206}],
+        ["The Compound/ Heaven: August 29", {lat: 49.278834,  lng:-123.123385}],
+        ["Studio Lounge and Nightclub: August 28", {lat: 49.280183,  lng: -123.121946}],
+        ["Cabana Lounge: ",{lat: 49.277666, lng: -123.125673}],
+        ["Lions MMA: August 18 to August 28 (inclusive)", {lat: 49.276497, lng: -123.126955}]
     ];
-    let center = ["Bump ",{lat: 33.645, lng: 78.726}];
-    // The map, centered at Uluru
+    let center = ["Bump ",{lat: 49.283138, lng: -123.118221}];
     let map = new google.maps.Map(
         document.getElementById('map'), {
             mapId: "bb4fbe2722fc6e0e",
             center: center[1],
-            zoom: 12,
+            zoom: 15,
         });
     // The marker, positioned at Uluru
     //let marker = new google.maps.Marker({position: center, map: map});
@@ -24,8 +24,13 @@ function initMap() {
     //    new google.maps.Marker({position: locations[i][1], map: map});
     //}
 
+    let biohazard = "http://maps.google.com/mapfiles/kml/pal3/icon46.png";
     for (i = 0; i < locations.length; i++) {
-        let marker = new google.maps.Marker({position: locations[i][1], map: map});
+        let marker = new google.maps.Marker({
+            position: locations[i][1],
+            map: map,
+            icon: biohazard
+        });
         marker[toString(i)] = new google.maps.InfoWindow({
             content: locations[i][0]
         });
