@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href = "./styles/style.css">
-<script language= "javascript" type="text/javascript" href="./scripts/scripts.js"></script>
-    <meta charset="UTF-8">
-    <meta name="Description" content="A map that lists risk of exposure in Metro Vancouver">
-    <title>Covid Exposure map</title>
-</head
+<html>
+<head>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/javascript" src="./scripts/scipts.js"></script>
+    <script defer
+            var api_key = "AIzaSyB9wWG3fPuyANa7XIPJneHQiv3GAtDOASY";
+            var mapID = "bb4fbe2722fc6e0e";
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9wWG3fPuyANa7XIPJneHQiv3GAtDOASY&map_ids=bb4fbe2722fc6e0e&callback=initMap">
+    </script>
+</head>
 <body>
+<h1>Current Vancouver Exposure</h1>
+<section>
+    <div id="map"></div>
+</section>
+<section>
+    <h3>Statistic</h3>
+    <table class = "table-inside">
+        <tr>
+            <th>Province</th>
+            <th>Total Cases</th>
+            <th>Newly Added</th>
+        </tr>
+        <tr>
+            <td>Merica</td>
+            <td>632M</td>
+            <td>41k</td>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>589M</td>
+            <td>80k</td>
+        </tr>
+    </table>
+</section>
+
+<!--The div element for the map -->
+
+<!--Load the API from the specified URL
+* The async attribute allows the browser to render the page while the API loads
+* The key parameter will contain your own API key (which is not needed for this tutorial)
+* The callback parameter executes the initMap() function
+-->
 
 </body>
 </html>

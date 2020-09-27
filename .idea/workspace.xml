@@ -19,9 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="ee5eded9-7cb8-4f7b-b634-f7ed8f6623b4" name="Default Changelist" comment="updated dark mode">
+=======
+    <list default="true" id="ee5eded9-7cb8-4f7b-b634-f7ed8f6623b4" name="Default Changelist" comment="">
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/scipts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/scipts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +63,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\15116\WebstormProjects\2020VanHacks" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -140,7 +152,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -170,9 +184,10 @@
       <screen x="1920" y="21" width="1344" height="800" />
     </state>
     <state width="1323" height="203" key="GridCell.Tab.0.right/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601164768488" />
-    <state x="-3058" y="344" key="SettingsEditor" timestamp="1601161430312">
-      <screen x="-3840" y="0" width="2560" height="1413" />
+    <state x="-3253" y="258" key="SettingsEditor" timestamp="1601168649073">
+      <screen x="-3840" y="0" width="1920" height="1060" />
     </state>
+    <state x="-3253" y="258" key="SettingsEditor/-3840.0.1920.1060/0.0.2560.1400@-3840.0.1920.1060" timestamp="1601168649073" />
     <state x="-3058" y="344" key="SettingsEditor/-3840.0.2560.1413/0.0.2560.1400@-3840.0.2560.1413" timestamp="1601161430312" />
     <state x="2185" y="154" key="Vcs.Push.Dialog.v2" timestamp="1601168223750">
       <screen x="1920" y="21" width="1344" height="800" />
