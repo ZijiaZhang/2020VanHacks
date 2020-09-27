@@ -1,6 +1,7 @@
-import express from 'express';
+import express, {Request, Response} from 'express';
 import {apiRouterV1} from "./backend/api/v1";
 import bodyParser from "body-parser";
+import * as path from "path";
 const mongoose = require('mongoose');
 
 
@@ -15,6 +16,6 @@ db.once('open', function() {
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use('/v1', apiRouterV1);
-
+app.use(express.static(path.join(__dirname, '..', 'public')));
 app.listen(port, ()=> console.log(`Example app listening on ${port}`));
 
