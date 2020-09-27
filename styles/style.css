@@ -1,0 +1,42 @@
+/* Set the size of the div element that contains the map */
+#map {
+    height: 90vh;  /* The height is 400 pixels */
+    width: 85%;  /* The width is the width of the web page */
+    float: left;
+}
+
+html, body {margin: 0; height: 100%; background-color: black}
+
+h3{
+    color: white;
+}
+
+h1{
+    font-family: "Lato", sans-serif;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.table-inside{
+    width: 100%;
+    color: white;
+    float: right;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+th, td {
+    padding-bottom: 10px;
+    height: 100%;
+}
+td {
+    text-align: center;
+    height: 25px;
+    width: 50px;
+}
+tr:hover {background-color: #D3D3D3;}
+
