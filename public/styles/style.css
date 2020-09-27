@@ -5,7 +5,8 @@
     float: left;
 }
 
-html, body {margin: 0; height: 100%; background-color: black}
+html, body {margin: 0; height: 100%; background-color: black;
+font-family: "Lato", sans-serif}
 
 h3{
     color: white;
@@ -31,6 +32,7 @@ table, th, td {
 }
 th, td {
     padding-bottom: 10px;
+    padding-top: 10px;
     height: 100%;
 }
 td {
@@ -38,5 +40,29 @@ td {
     height: 25px;
     width: 50px;
 }
+
+th {
+    background-color: #e67e22;
+}
 tr:hover {background-color: #D3D3D3;}
 
+.origin{
+    float: right;
+    position: absolute;
+    color: white;
+    right: 10px;
+    margin-left: 2px;
+    word-wrap: break-word;
+    white-space:pre-wrap;
+
+}
+
+.btn{
+    color: #e67e22;
+    border: 1px solid #e67e22;
+    border-radius: 200px;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 10px;
+    float:right
+}

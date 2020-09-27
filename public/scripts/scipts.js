@@ -17,6 +17,7 @@ function initMap() {
             mapId: "bb4fbe2722fc6e0e",
             center: center[1],
             zoom: 12,
+            disableDefaultUI:true
         });
     // The marker, positioned at Uluru
     //let marker = new google.maps.Marker({position: center, map: map});
