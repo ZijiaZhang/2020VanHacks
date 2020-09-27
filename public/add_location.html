@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/add_location.css">
+</head>
+<body>
+<div id="all-location" style="width: 100%;">
+    <div class="li-container" style="width: 80%; margin-left: 10%">
+        <div class="input-group mb-3" >
+            <input name="location" type="text" placeholder="add a location" class="form-control"/>
+                <div class="input-group-append">
+                    <button onclick="get_location($(this).closest('.input-group').find('input[name=location]').val(), $(this).closest('.li-container').find('input[name=long]'), $(this).closest('.li-container').find('input[name=lat]'))" class="btn btn-primary">GO</button>
+                </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"> <label class="input-group-text"> Longitude</label>  </div>
+            <input name="long" type="text" placeholder="" class="form-control"/>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"> <label class="input-group-text"> Latitude</label> </div>
+            <input name="lat" type="text" placeholder="" class="form-control"/>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"> <label class="input-group-text"> Radius</label>  </div>
+            <input name="radius" type="number" placeholder="" class="form-control" value="100"/>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"> <label class="input-group-text"> Time</label>  </div>
+            <input name="time" type="datetime-local" placeholder="" class="form-control"/>
+        </div>
+        <div class="input-group mb-3">
+        <button onclick="get_location($(this).closest('div').remove())" class="btn btn-primary">-</button>
+        </div>
+    </div>
+</div>
+<button class="btn btn-primary" onclick="add_row()">+</button>
+<button class="btn btn-primary" onclick="submit()">Submit</button>
+</body>
+<script>
+    document.body.setAttribute("data-theme","dark");
+    async function get_location(query, long, lat) {
+        console.log(query);
+       let result = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${query}&key=AIzaSyB9wWG3fPuyANa7XIPJneHQiv3GAtDOASY`);
+       let json_data = await result.json();
+        console.log(json_data);
+        long.val(json_data.results[0].geometry.location.lng);
+        lat.val(json_data.results[0].geometry.location.lat);
+    }
+
+    function add_row() {
+        document.getElementById("all-location").innerHTML += "        <div class=\"input-group mb-3\" >\n" +
+            "            <input name=\"location\" type=\"text\" placeholder=\"add a location\" class=\"form-control\"/>\n" +
+            "                <div class=\"input-group-append\">\n" +
+            "                    <button onclick=\"get_location($(this).closest('.input-group').find('input[name=location]').val(), $(this).closest('.li-container').find('input[name=long]'), $(this).closest('.li-container').find('input[name=lat]'))\" class=\"btn btn-primary\">GO</button>\n" +
+            "                </div>\n" +
+            "        </div>\n" +
+            "        <div class=\"input-group mb-3\">\n" +
+            "            <div class=\"input-group-prepend\"> <label class=\"input-group-text\"> Longitude</label>  </div>\n" +
+            "            <input name=\"long\" type=\"text\" placeholder=\"\" class=\"form-control\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"input-group mb-3\">\n" +
+            "            <div class=\"input-group-prepend\"> <label class=\"input-group-text\"> Latitude</label> </div>\n" +
+            "            <input name=\"lat\" type=\"text\" placeholder=\"\" class=\"form-control\"/>\n" +
+            "        </div>\n" +
+            "\n" +
+            "        <div class=\"input-group mb-3\">\n" +
+            "            <div class=\"input-group-prepend\"> <label class=\"input-group-text\"> Radius</label>  </div>\n" +
+            "            <input name=\"radius\" type=\"number\" placeholder=\"\" class=\"form-control\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"input-group mb-3\">\n" +
+            "            <div class=\"input-group-prepend\"> <label class=\"input-group-text\"> Time</label>  </div>\n" +
+            "            <input name=\"time\" type=\"datetime-local\" placeholder=\"\" class=\"form-control\"/>\n" +
+            "        </div>\n" +
+            "        <div class=\"input-group mb-3\">\n" +
+            "        <button onclick=\"get_location($(this).closest('div').remove())\" class=\"btn btn-primary\">-</button>\n" +
+            "        </div>";
+    }
+
+    function submit() {
+        let result = [];
+        for (let item of document.getElementById('all-location').children){
+            let long = item.querySelector('input[name=long]').value;
+            let lat = item.querySelector('input[name=lat]').value;
+            let radius = item.querySelector('input[name=radius]').value;
+            let time = item.querySelector('input[name=time]').value;
+            result.push({long,lat, radius,time})
+        }
+        console.log(result);
+        fetch('/v1/areas/batch', {method: 'PUT', body: JSON.stringify({
+            areas: result
+            }), headers: {'Content-Type': 'application/json'} });
+        window.location.href = '/';
+    }
+
+</script>
+</html>
