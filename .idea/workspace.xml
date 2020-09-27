@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee5eded9-7cb8-4f7b-b634-f7ed8f6623b4" name="Default Changelist" comment="updated api key">
+    <list default="true" id="ee5eded9-7cb8-4f7b-b634-f7ed8f6623b4" name="Default Changelist" comment="updated dark mode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601161172113</updated>
       <workItem from="1601161173333" duration="1170000" />
-      <workItem from="1601162983965" duration="4843000" />
+      <workItem from="1601162983965" duration="5482000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <created>1601163270260</created>
@@ -115,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601167155812</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated dark mode">
+      <created>1601168222443</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601168222443</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +142,8 @@
     <MESSAGE value="done" />
     <MESSAGE value="updated UBC coordinate" />
     <MESSAGE value="updated api key" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated api key" />
+    <MESSAGE value="updated dark mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated dark mode" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1323" height="203" key="GridCell.Tab.0.bottom" timestamp="1601164768488">
@@ -159,9 +166,13 @@
       <screen x="-3840" y="0" width="2560" height="1413" />
     </state>
     <state x="-3058" y="344" key="SettingsEditor/-3840.0.2560.1413/0.0.2560.1400@-3840.0.2560.1413" timestamp="1601161430312" />
-    <state x="2185" y="154" key="Vcs.Push.Dialog.v2" timestamp="1601167162435">
+    <state x="2185" y="154" key="Vcs.Push.Dialog.v2" timestamp="1601168223750">
       <screen x="1920" y="21" width="1344" height="800" />
     </state>
-    <state x="2185" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601167162435" />
+    <state x="2185" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601168223750" />
+    <state x="2410" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601168557290">
+      <screen x="1920" y="21" width="1344" height="800" />
+    </state>
+    <state x="2410" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601168557290" />
   </component>
 </project>
