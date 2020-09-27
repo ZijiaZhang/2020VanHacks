@@ -2,7 +2,7 @@ function initMap() {
     // The location of Uluru
     let locations = [
         ["Wreck Beach: Sept 7th 1pm to 9pm", {lat: 49.262179, lng:  -123.261530}],
-        ["The King’s Head Public House: Sept 4th to Sept 7th", {lat: 49.271314, lng: -123.154828}],
+        ["The Kings Head Public House: Sept 4th to Sept 7th", {lat: 49.271314, lng: -123.154828}],
         ["Athens Cultural Club: August 26 to September 8", {lat: 49.262930, lng:  -123.107300}],
         ["The West Pub: August 20 to September 8", {lat: 49.280835, lng: -123.104052}],
         ["Flying Beaver Bar and Grill: August 28 to September 3", {lat: 49.177289, lng: -123.168206}],
