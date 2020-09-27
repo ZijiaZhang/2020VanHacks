@@ -22,3 +22,14 @@ h1{
     width:100%;
     color: white;
 }
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+th, td {
+    padding-bottom: 15px;
+}
+td {
+    text-align: center;
+}
