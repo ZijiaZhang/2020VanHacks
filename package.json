@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha",
     "compile": "tsc",
-    "start": "PORT=9002 ts-node-dev ./src/App.ts --respawn --transpileOnly"
+    "start": "PORT=9002 ts-node-dev ./src/App.ts --respawn --transpileOnly",
+    "dev": "ts-node-dev ./src/App.ts --respawn --transpileOnly"
   },
   "repository": {
     "type": "git",
