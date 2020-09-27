@@ -46,7 +46,7 @@ async function initMap() {
                 center: {lat: data[i].latitude, lng: data[i].longitude},
                 radius: data[i].radius,
             })
-        } catch {e} {
+        } catch (e) {
             console.error(e);
         }
     }
