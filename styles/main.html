@@ -5,7 +5,7 @@
         /* Set the size of the div element that contains the map */
         #map {
             height: 400px;  /* The height is 400 pixels */
-            width: 90%;  /* The width is the width of the web page */
+            width: 100%;  /* The width is the width of the web page */
         }
     </style>
 </head>
@@ -17,7 +17,7 @@
     // Initialize and add the map
     function initMap() {
         // The location of Uluru
-        var locations = [
+        let locations = [
             {lat: 33.7667, lng: 78.9877},
             {lat: 33.74, lng: 78.849},
             {lat: 33.604, lng:  78.745},
@@ -27,7 +27,7 @@
             {lat: 33.6225,  lng: 78.7755},
             {lat: 33.645, lng: 78.726}
         ];
-        var center = {lat: 33.645, lng: 78.726};
+        let center = {lat: 33.645, lng: 78.726};
         // The map, centered at Uluru
         var map = new google.maps.Map(
             document.getElementById('map'), {
@@ -35,10 +35,19 @@
                 center: center,
                 zoom: 12,
             });
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({position: center, map: map});
+
         for (i = 0; i < locations.length; i++) {
-            new google.maps.Marker({position: locations[i], map: map});
+            let marker = new google.maps.Marker({position: locations[i], map: map});
+            marker[toString(i)] = new google.maps.InfoWindow({
+                content: "Frank Zhou"
+            });
+
+            google.maps.event.addListener(marker, 'mouseover', function() {
+                this[toString(i)].open(map, this);
+            });
+            google.maps.event.addListener(marker, 'mouseout', function() {
+                this[toString(i)].close(map, this);
+            });
         }
 
     }
@@ -57,6 +66,23 @@
 </body>
 
 <body>
-<h3></h3>
+<h3>Statistic</h3>
+<table style="width:100%">
+    <tr>
+        <th>Province</th>
+        <th>Total Cases</th>
+        <th>Newly Added</th>
+    </tr>
+    <tr>
+        <td>Merica</td>
+        <td>632M</td>
+        <td>41k</td>
+    </tr>
+    <tr>
+        <td>India</td>
+        <td>589M</td>
+        <td>80k</td>
+    </tr>
+</table>
 </body>
 </html>

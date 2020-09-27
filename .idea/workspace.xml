@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ee5eded9-7cb8-4f7b-b634-f7ed8f6623b4" name="Default Changelist" comment="updated dark mode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601161172113</updated>
       <workItem from="1601161173333" duration="1170000" />
-      <workItem from="1601162983965" duration="5482000" />
+      <workItem from="1601162983965" duration="7855000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <created>1601163270260</created>
@@ -121,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601168222443</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updated dark mode">
+      <created>1601168826218</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601168826218</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
