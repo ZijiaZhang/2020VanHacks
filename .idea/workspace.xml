@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee5eded9-7cb8-4f7b-b634-f7ed8f6623b4" name="Default Changelist" comment="updated UBC coordinate">
+    <list default="true" id="ee5eded9-7cb8-4f7b-b634-f7ed8f6623b4" name="Default Changelist" comment="updated api key">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.html" afterDir="false" />
     </list>
@@ -71,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601161172113</updated>
       <workItem from="1601161173333" duration="1170000" />
-      <workItem from="1601162983965" duration="1008000" />
+      <workItem from="1601162983965" duration="2712000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <created>1601163270260</created>
@@ -87,7 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601163466419</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated UBC coordinate">
+      <created>1601164147791</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601164147791</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated api key">
+      <created>1601164167879</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601164167879</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,32 +121,33 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done" />
     <MESSAGE value="updated UBC coordinate" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated UBC coordinate" />
+    <MESSAGE value="updated api key" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated api key" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="203" key="GridCell.Tab.0.bottom" timestamp="1601163004765">
+    <state width="1323" height="203" key="GridCell.Tab.0.bottom" timestamp="1601164768488">
       <screen x="1920" y="21" width="1344" height="800" />
     </state>
-    <state width="1323" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601163004765" />
-    <state width="1323" height="203" key="GridCell.Tab.0.center" timestamp="1601163004765">
+    <state width="1323" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601164768488" />
+    <state width="1323" height="203" key="GridCell.Tab.0.center" timestamp="1601164768488">
       <screen x="1920" y="21" width="1344" height="800" />
     </state>
-    <state width="1323" height="203" key="GridCell.Tab.0.center/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601163004765" />
-    <state width="1323" height="203" key="GridCell.Tab.0.left" timestamp="1601163004764">
+    <state width="1323" height="203" key="GridCell.Tab.0.center/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601164768488" />
+    <state width="1323" height="203" key="GridCell.Tab.0.left" timestamp="1601164768488">
       <screen x="1920" y="21" width="1344" height="800" />
     </state>
-    <state width="1323" height="203" key="GridCell.Tab.0.left/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601163004764" />
-    <state width="1323" height="203" key="GridCell.Tab.0.right" timestamp="1601163004765">
+    <state width="1323" height="203" key="GridCell.Tab.0.left/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601164768488" />
+    <state width="1323" height="203" key="GridCell.Tab.0.right" timestamp="1601164768488">
       <screen x="1920" y="21" width="1344" height="800" />
     </state>
-    <state width="1323" height="203" key="GridCell.Tab.0.right/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601163004765" />
+    <state width="1323" height="203" key="GridCell.Tab.0.right/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601164768488" />
     <state x="-3058" y="344" key="SettingsEditor" timestamp="1601161430312">
       <screen x="-3840" y="0" width="2560" height="1413" />
     </state>
     <state x="-3058" y="344" key="SettingsEditor/-3840.0.2560.1413/0.0.2560.1400@-3840.0.2560.1413" timestamp="1601161430312" />
-    <state x="2185" y="154" key="Vcs.Push.Dialog.v2" timestamp="1601163467850">
+    <state x="2185" y="154" key="Vcs.Push.Dialog.v2" timestamp="1601164170830">
       <screen x="1920" y="21" width="1344" height="800" />
     </state>
-    <state x="2185" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601163467850" />
+    <state x="2185" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.21.1344.800@1920.21.1344.800" timestamp="1601164170830" />
   </component>
 </project>

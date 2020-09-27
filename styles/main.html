@@ -5,7 +5,7 @@
         /* Set the size of the div element that contains the map */
         #map {
             height: 400px;  /* The height is 400 pixels */
-            width: 100%;  /* The width is the width of the web page */
+            width: 80%;  /* The width is the width of the web page */
         }
     </style>
 </head>
@@ -17,12 +17,21 @@
     // Initialize and add the map
     function initMap() {
         // The location of Uluru
-        var uluru = {lat: 49.2765, lng: -123.2177};
+        var locations = [
+            {lat: -33.890542, lng: 151.274856},
+            {lat: -35, lng: 150.274856},
+            {lat: -36.890542, lng: 153.274856},
+            {lat: -32.890542, lng: 155.274856}
+        ];
+        var uluru = {lat: -33.890542, lng: 151.274856};
         // The map, centered at Uluru
         var map = new google.maps.Map(
             document.getElementById('map'), {zoom: 4, center: uluru});
         // The marker, positioned at Uluru
         var marker = new google.maps.Marker({position: uluru, map: map});
+        for (i = 0; i < locations.length; i++) {
+            new google.maps.Marker({position: locations[i], map: map});
+        }
     }
 </script>
 <!--Load the API from the specified URL
@@ -32,7 +41,6 @@
 -->
 <script defer
         var api_key = "AIzaSyB9wWG3fPuyANa7XIPJneHQiv3GAtDOASY";
-        var api_password;
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9wWG3fPuyANa7XIPJneHQiv3GAtDOASY&callback=initMap">
 </script>
 </body>
