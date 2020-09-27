@@ -100,7 +100,7 @@
             let lat = item.querySelector('input[name=lat]').value;
             let radius = item.querySelector('input[name=radius]').value;
             let time = item.querySelector('input[name=time]').value;
-            result.push({long,lat, radius,time})
+            result.push({longitude: long,latitude: lat, radius,time})
         }
         console.log(result);
         fetch('/v1/areas/batch', {method: 'PUT', body: JSON.stringify({
