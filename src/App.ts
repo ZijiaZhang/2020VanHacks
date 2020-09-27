@@ -17,5 +17,5 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use('/v1', apiRouterV1);
 app.use(express.static(path.join(__dirname, '..', 'public')));
-app.listen(port, ()=> console.log(`Example app listening on ${port}`));
+app.listen(port, ()=> console.log(`Example app listening on http://localhost:${port}`));
 
