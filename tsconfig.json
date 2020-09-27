@@ -15,8 +15,9 @@
       "./node_modules/@types"
     ],
     "jsx": "react",
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
+    "listEmittedFiles": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
