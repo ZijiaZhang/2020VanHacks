@@ -19,32 +19,36 @@ async function initMap() {
 
     //let biohazard = "http://maps.google.com/mapfiles/kml/pal3/icon46.png";
     for (i = 0; i < data.length; i++) {
-        let marker = new google.maps.Marker({
-            position: {lat: data[i].latitude, lng:data[i].longitude},
-            map: map,
-            //icon: biohazard
-        });
-        marker[toString(i)] = new google.maps.InfoWindow({
-            content: data[i].time
-        });
+        try {
+            let marker = new google.maps.Marker({
+                position: {lat: data[i].latitude, lng: data[i].longitude},
+                map: map,
+                //icon: biohazard
+            });
+            marker[toString(i)] = new google.maps.InfoWindow({
+                content: data[i].time
+            });
 
-        google.maps.event.addListener(marker, 'mouseover', function() {
-            this[toString(i)].open(map, this);
-        });
-        google.maps.event.addListener(marker, 'mouseout', function() {
-            this[toString(i)].close(map, this);
-        });
+            google.maps.event.addListener(marker, 'mouseover', function () {
+                this[toString(i)].open(map, this);
+            });
+            google.maps.event.addListener(marker, 'mouseout', function () {
+                this[toString(i)].close(map, this);
+            });
 
-        const circle = new google.maps.Circle({
-            strokeColor: "#FF0000",
-            strokeOpacity: 0.8,
-            strokeWeight: 2,
-            fillColor: "#FF0000",
-            fillOpacity: 0.35,
-            map,
-            center: {lat: data[i].latitude, lng:data[i].longitude},
-            radius: data[i].radius,
-        })
+            const circle = new google.maps.Circle({
+                strokeColor: "#FF0000",
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: "#FF0000",
+                fillOpacity: 0.35,
+                map,
+                center: {lat: data[i].latitude, lng: data[i].longitude},
+                radius: data[i].radius,
+            })
+        } catch {e} {
+            console.error(e);
+        }
     }
 
 }
