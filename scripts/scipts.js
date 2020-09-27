@@ -16,7 +16,7 @@ function initMap() {
         document.getElementById('map'), {
             mapId: "bb4fbe2722fc6e0e",
             center: center[1],
-            zoom: 15,
+            zoom: 12,
         });
     // The marker, positioned at Uluru
     //let marker = new google.maps.Marker({position: center, map: map});
@@ -24,12 +24,12 @@ function initMap() {
     //    new google.maps.Marker({position: locations[i][1], map: map});
     //}
 
-    let biohazard = "http://maps.google.com/mapfiles/kml/pal3/icon46.png";
+    //let biohazard = "http://maps.google.com/mapfiles/kml/pal3/icon46.png";
     for (i = 0; i < locations.length; i++) {
         let marker = new google.maps.Marker({
             position: locations[i][1],
             map: map,
-            icon: biohazard
+            //icon: biohazard
         });
         marker[toString(i)] = new google.maps.InfoWindow({
             content: locations[i][0]
@@ -50,7 +50,7 @@ function initMap() {
             fillOpacity: 0.35,
             map,
             center: locations[i][1],
-            radius: 500,
+            radius: 300,
         })
     }
 
