@@ -53,7 +53,8 @@
     }
 
     function add_row() {
-        document.getElementById("all-location").innerHTML += "        <div class=\"input-group mb-3\" >\n" +
+        document.getElementById("all-location").innerHTML += "<div class=\"li-container\" style=\"width: 80%; margin-left: 10%\">\n" +
+            "        <div class=\"input-group mb-3\" >\n" +
             "            <input name=\"location\" type=\"text\" placeholder=\"add a location\" class=\"form-control\"/>\n" +
             "                <div class=\"input-group-append\">\n" +
             "                    <button onclick=\"get_location($(this).closest('.input-group').find('input[name=location]').val(), $(this).closest('.li-container').find('input[name=long]'), $(this).closest('.li-container').find('input[name=lat]'))\" class=\"btn btn-primary\">GO</button>\n" +
@@ -70,7 +71,7 @@
             "\n" +
             "        <div class=\"input-group mb-3\">\n" +
             "            <div class=\"input-group-prepend\"> <label class=\"input-group-text\"> Radius</label>  </div>\n" +
-            "            <input name=\"radius\" type=\"number\" placeholder=\"\" class=\"form-control\"/>\n" +
+            "            <input name=\"radius\" type=\"number\" placeholder=\"\" class=\"form-control\" value=\"100\"/>\n" +
             "        </div>\n" +
             "        <div class=\"input-group mb-3\">\n" +
             "            <div class=\"input-group-prepend\"> <label class=\"input-group-text\"> Time</label>  </div>\n" +
@@ -78,7 +79,8 @@
             "        </div>\n" +
             "        <div class=\"input-group mb-3\">\n" +
             "        <button onclick=\"get_location($(this).closest('div').remove())\" class=\"btn btn-primary\">-</button>\n" +
-            "        </div>";
+            "        </div>\n" +
+            "    </div>";
     }
 
     function submit() {
