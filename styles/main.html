@@ -5,7 +5,7 @@
         /* Set the size of the div element that contains the map */
         #map {
             height: 400px;  /* The height is 400 pixels */
-            width: 80%;  /* The width is the width of the web page */
+            width: 90%;  /* The width is the width of the web page */
         }
     </style>
 </head>
@@ -23,16 +23,22 @@
             {lat: -36.890542, lng: 153.274856},
             {lat: -32.890542, lng: 155.274856}
         ];
-        var uluru = {lat: -33.890542, lng: 151.274856};
+        var center = {lat: -33.890542, lng: 153.274856};
         // The map, centered at Uluru
         var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 4, center: uluru});
+            document.getElementById('map'), {
+                mapId: "a159c0674de41c4f",
+                center: center,
+                zoom: 12,
+            });
         // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({position: uluru, map: map});
+        var marker = new google.maps.Marker({position: center, map: map});
         for (i = 0; i < locations.length; i++) {
             new google.maps.Marker({position: locations[i], map: map});
         }
+
     }
+
 </script>
 <!--Load the API from the specified URL
 * The async attribute allows the browser to render the page while the API loads
@@ -43,5 +49,9 @@
         var api_key = "AIzaSyB9wWG3fPuyANa7XIPJneHQiv3GAtDOASY";
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9wWG3fPuyANa7XIPJneHQiv3GAtDOASY&callback=initMap">
 </script>
+</body>
+
+<body>
+<h3></h3>
 </body>
 </html>
