@@ -48,7 +48,7 @@
             }
 
             //return result; //JavaScript object
-            return JSON.stringify(result); //JSON
+            return result; //JSON
         }
 
         let fileInput = document.getElementById("csv"),
@@ -80,9 +80,9 @@
             reader.onload = () => {
                 let parsedJson = csvJSON(reader.result);
                 console.log(parsedJson);
-                fetch('/v1/areas/batch', {method: 'PUT', body: parsedJson
+                fetch('/v1/areas/batch', {method: 'PUT', body: JSON.stringify({areas: parsedJson})
                     , headers: {'Content-Type': 'application/json'} });
-                //window.location.href = '/';
+                window.location.href = '/';
             }
 
         }
