@@ -1,7 +1,7 @@
 /* Set the size of the div element that contains the map */
 #map {
-    height: 90vh;  /* The height is 400 pixels */
-    width: 85%;  /* The width is the width of the web page */
+    height: 100vh;  /* The height is 400 pixels */
+    width: 85vw;  /* The width is the width of the web page */
     float: left;
 }
 
@@ -65,4 +65,77 @@ tr:hover {background-color: #D3D3D3;}
     text-decoration: none;
     padding: 10px 10px;
     float:right
+}
+
+.self-report-btn{
+    color: #fff;
+    border: 1px solid #e67e22;
+    border-radius: 200px;
+    background-color: #e67e22;
+    text-decoration: none;
+    padding: 10px 10px;
+    float:right;
+    margin-top: 10px;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color:#333333;
+    width: 15vw;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #333333;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.form-container h1{
+    color: white
+}
+
+.csv-upload{
+    border-width: 0;
 }
